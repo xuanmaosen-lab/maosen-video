@@ -1,0 +1,6 @@
+interface:
+  display_name: "茂森视频工作室"
+  short_description: "本地口播精剪与脚本视频制作，先确认素材和转场，再生成可复查的成片"
+  default_prompt: "使用 $maosen-video 制作这条视频，先确认素材与转场需求，保留主要内容并交付可编辑时间轴。"
+policy:
+  allow_implicit_invocation: true
