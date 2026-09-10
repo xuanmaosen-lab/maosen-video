@@ -2,6 +2,8 @@
 
 Copyright 2026 xuanmaosen-lab. Licensed under Apache-2.0; see LICENSE.
 
+项目仓库：[xuanmaosen-lab/maosen-video](https://github.com/xuanmaosen-lab/maosen-video)。
+
 一套从零编写的本地视频编辑 CLI 与 AI Agent skill。使用显式时间轴把视频、图卡、字幕和圆形人物小窗组合成成片；先确认素材来源和转场需求，再开始制作。
 
 这是首个可运行版本，不是其他项目的换名发行，也不宣称已经实现参考项目的全部功能。技术路线是 Python、Pillow 和 FFmpeg，无 Node/Remotion 依赖，无内置云服务、账号或 API 密钥。
@@ -17,6 +19,15 @@ Copyright 2026 xuanmaosen-lab. Licensed under Apache-2.0; see LICENSE.
 脚本理解、分镜设计和素材生成由调用 skill 的 Agent 按用户授权完成。此 CLI 不会自行调用模型或假装已生成图片／语音。
 
 ## 运行
+
+下载此 skill（目标目录已存在时不要重复克隆或覆盖）：
+
+```bash
+git clone https://github.com/xuanmaosen-lab/maosen-video.git ~/.claude/skills/maosen-video
+cd ~/.claude/skills/maosen-video
+```
+
+用于 Codex 时，可将目标目录换成 `~/.codex/skills/maosen-video`。本项目使用 Python，不使用旧项目的 `npm install`。
 
 需要 Python 3.10+、Pillow 10–12、FFmpeg/ffprobe（须支持 libx264、AAC、xfade、geq、overlay）。先在自己的环境准备依赖，再运行：
 

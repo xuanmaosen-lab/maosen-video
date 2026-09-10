@@ -5,6 +5,8 @@ description: 将口播素材或已确认的脚本制作成本地视频，支持�
 
 # 茂森视频工作室
 
+项目仓库：[xuanmaosen-lab/maosen-video](https://github.com/xuanmaosen-lab/maosen-video)。安装与运行说明见 [README.md](README.md)。
+
 从内容与观看目的出发制定编辑方案，使用本目录的 `scripts/studio.py` 执行本地剪辑。代码和文档是新实现，不依赖另一套视频 skill。详细数据约定见 [时间轴说明](references/timeline.md)。
 
 ## 先确定用户要什么
